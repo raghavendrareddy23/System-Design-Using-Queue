@@ -1,0 +1,28 @@
+{
+  "name": "system-design-using-queue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.4",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "events": "^3.3.0",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.3",
+    "prom-client": "^15.1.2",
+    "retry": "^0.13.1",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
