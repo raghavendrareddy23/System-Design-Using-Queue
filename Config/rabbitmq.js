@@ -3,11 +3,9 @@ const amqp = require("amqplib");
 let connection;
 let channel;
 
-const rabbitMQUri = process.env.RABBITMQ_URI||'amqp://guest:guest@localhost:5672/'
-
 const initRabbitMQ = async () => {
   try {
-    connection = await amqp.connect(rabbitMQUri);
+    connection = await amqp.connect('amqp://localhost:5672');
     channel = await connection.createChannel();
     console.log("RabbitMQ connected");
   } catch (error) {
